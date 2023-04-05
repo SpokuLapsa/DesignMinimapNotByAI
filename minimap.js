@@ -41,9 +41,9 @@ async function loadTemplate(){
     })
 }
 
-const TEM_W = 9;
-const TEM_H = 9;
-const TEM_ZOOM = 10;
+const TEM_W = 13;
+const TEM_H = 13;
+const TEM_ZOOM = 12;
 
 async function initTemplate(){
     await loadTemplate();
@@ -92,7 +92,6 @@ function drawTemplate(){
     const xEnd = cordx + halfWidth + 1;
     const yEnd = cordy + halfHeight + 1;
 
-    // рисуем шаблон
     const data = imgCtx.getImageData(xStart, yStart, xEnd-xStart, yEnd-yStart).data;
     for(let x = 0; x < TEM_W; x++){
         for(let y = 0; y < TEM_H; y++){
@@ -104,7 +103,6 @@ function drawTemplate(){
         }
     }
 
-    // рисуем сетку
     temCtx.fillStyle = 'black';
     temCtx.strokeStyle = 'black';
     temCtx.lineWidth = 1;
@@ -122,7 +120,6 @@ function drawTemplate(){
 
     temCtx.stroke();
 
-    // ну и посерединке квадратик с обводкой
     temCtx.lineWidth = 3;
     temCtx.strokeStyle = 'white';
     temCtx.strokeRect(halfWidth*TEM_ZOOM, halfHeight*TEM_ZOOM, TEM_ZOOM, TEM_ZOOM)
