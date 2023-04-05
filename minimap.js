@@ -102,7 +102,8 @@ function drawTemplate(){
             temCtx.fillRect(x*TEM_ZOOM, y*TEM_ZOOM, TEM_ZOOM, TEM_ZOOM);
         }
     }
-
+    
+    // grid
     /*temCtx.fillStyle = 'black';
     temCtx.strokeStyle = 'black';
     temCtx.lineWidth = 1;
