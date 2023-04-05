@@ -1,4 +1,4 @@
-const VERSION = 2
+const VERSION = 3
 
 const coordsEl = document.querySelector('div[title="Координаты пикселя."]')
 
@@ -103,7 +103,7 @@ function drawTemplate(){
         }
     }
 
-    temCtx.fillStyle = 'black';
+    /*temCtx.fillStyle = 'black';
     temCtx.strokeStyle = 'black';
     temCtx.lineWidth = 1;
 
@@ -118,7 +118,7 @@ function drawTemplate(){
         temCtx.lineTo(TEM_H*TEM_ZOOM, lineY*TEM_ZOOM);
     }
 
-    temCtx.stroke();
+    temCtx.stroke();*/
 
     temCtx.lineWidth = 3;
     temCtx.strokeStyle = 'white';
