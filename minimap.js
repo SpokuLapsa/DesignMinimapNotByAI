@@ -1,4 +1,4 @@
-const VERSION = 8
+const VERSION = 9
 
 const coordsEl = document.querySelector('div[title="Координаты пикселя."]')
 
@@ -43,7 +43,7 @@ async function loadTemplate(){
 
 const TEM_W = 9;
 const TEM_H = 9;
-const TEM_ZOOM = 10;
+const TEM_ZOOM = 15;
 
 async function initTemplate(){
     await loadTemplate();
