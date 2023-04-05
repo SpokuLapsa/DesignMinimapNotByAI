@@ -41,9 +41,9 @@ async function loadTemplate(){
     })
 }
 
-const TEM_W = 13;
-const TEM_H = 13;
-const TEM_ZOOM = 12;
+const TEM_W = 11;
+const TEM_H = 11;
+const TEM_ZOOM = 10;
 
 async function initTemplate(){
     await loadTemplate();
